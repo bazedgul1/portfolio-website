@@ -10,13 +10,14 @@ const About = () => {
      />
     </div>
     <div className="flex flex-wrap lg:flex-nowrap justify-between px-10 py-12">
-        <div className="lg:w-1/2 w-full space-y-6 ml-16">
+        <div className="lg:w-1/1.2 w-full space-y-6 ml-16">
 
             <h1 className="text-4xl font-bold tracking-tight
             text-zinc-800 sm:text-5xl dark:text-zinc-100">
-                Hi 👋, I am Bazed Gul .
-                💻 Software Engineer | Backend & Frontend Developer
+                Hi 👋, I am Bazed Gul !!!.
             </h1>
+            <h2 className="text-4xl font-bold tracking-tight
+            text-zinc-800 sm:text-5xl dark:text-zinc-100">💻 Backend & Frontend Developer</h2>
             <div>
                 <p className="text-red-200 mt-2">
                 🎓 Recent Graduate in Software Engineering | University of Lahore.
