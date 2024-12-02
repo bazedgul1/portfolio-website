@@ -1,0 +1,16 @@
+.navbar {
+  border: 1px solid #393434;
+    background-color: #393434;
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 5px 15px 5px 15px;
+}
+
+.update{
+  background-color: #0e0d0d;
+    width: 65%;
+    border: 1px solid;
+    height: 11rem;
+    border-radius: 31px;
+    margin: auto;
+}
