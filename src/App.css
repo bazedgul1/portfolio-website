@@ -1,5 +1,5 @@
 .navbar {
-  border: 1px solid #393434;
+    border: 1px solid #393434;
     background-color: #393434;
     border-radius: 30px;
     font-size: 15px;
@@ -7,10 +7,13 @@
 }
 
 .update{
-  background-color: #0e0d0d;
-    width: 65%;
+    background-color: #0e0d0d;
+    width: 100%;
     border: 1px solid;
     height: 11rem;
     border-radius: 31px;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }

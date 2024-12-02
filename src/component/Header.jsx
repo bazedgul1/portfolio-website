@@ -15,12 +15,15 @@ const Header = () => {
           <Link to="/articles" className="hover:text-gray-400">
             Articles
           </Link>
+          <Link to="/" className="hover:text-gray-400">
+            Home
+          </Link>
           <Link to="/projects" className="hover:text-gray-400">
             Projects
           </Link>
-          <Link to="/speaking" className="hover:text-gray-400">
+          {/* <Link to="/speaking" className="hover:text-gray-400">
             Speaking
-          </Link>
+          </Link> */}
           <Link to="/uses" className="hover:text-gray-400">
             Uses
           </Link>

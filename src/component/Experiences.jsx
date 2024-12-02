@@ -1,4 +1,5 @@
-import { MdOutlineForwardToInbox } from "react-icons/md";
+import { MdOutlineForwardToInbox,  } from "react-icons/md";
+
 const Experiences = () => {
     return (
       <>
@@ -42,7 +43,7 @@ const Experiences = () => {
   
           {/* <!-- Right Side (Updates Section) --> */}
           <div className="lg:w-1/2 w-full space-y-6 pl-5">
-            <h2 className="text-2xl font-bold text-white">Work</h2>
+            <h2 className="text-2xl font-bold text-white flex"> Work</h2>
             {/* <!-- Update Card 1 --> */}
             <div className="bg-black hover:bg-gray-800 transition rounded-lg p-5 flex items-center space-x-4 shadow-lg">
               <div className="w-12 h-12 bg-gray-700 flex items-center justify-center rounded-full">
@@ -87,12 +88,15 @@ const Experiences = () => {
             </div> */}
   
             {/* <!-- Resume Download Button --> */}
+            <button>
+
             <a  
             href="/resume.pdf"
             download="Bazed_Gul_Resume.pdf"
             className="mt-6 px-6 py-3 bg-slate-900 text-white rounded hover:bg-blue-600 transition w-full">
               Download Resume
             </a>
+              </button>
   
             {/* <!-- Additional Card Section --> */}
             {/* <div className="max-w-sm rounded overflow-hidden shadow-lg mt-6">
@@ -124,7 +128,7 @@ const Experiences = () => {
                 
                   <h1 className="text-white flex"> <MdOutlineForwardToInbox className="mt-1 gap-2" /> - Stay up to Date</h1>
                   <p className="text-white mt-4">Get notified when I publish something new, and unsubscribe at any time.</p>
-                  <input className="bg-black mt-4 border-white border-solid text-white w-50 p-2 " type="email" placeholder="Email Address" />
+                  <input className="bg-black mt-4 border-white border-solid text-white w-96 p-2 " type="email" placeholder="Email Address" />
                   <button className="text-white ml-3 w-20 h-10 bg-slate-900 hover:bg-blue-800 text-white" >Join</button>
                   </div>
                 </div>
