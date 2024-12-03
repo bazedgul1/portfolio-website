@@ -13,37 +13,37 @@ const About = () => {
         <div className="lg:w-1/1.2 w-full space-y-6 ml-16">
 
             <h1 className="text-4xl font-bold tracking-tight
-            text-zinc-800 sm:text-5xl dark:text-zinc-100">
+            text-zinc-800 sm:text-5xl dark:text-zinc-100 hover:text-blue-700 translate-x-1">
                 Hi 👋, I am Bazed Gul !!!.
             </h1>
             <h2 className="text-4xl font-bold tracking-tight
-            text-zinc-800 sm:text-5xl dark:text-zinc-100">💻 Backend & Frontend Developer</h2>
+            text-zinc-800 sm:text-5xl dark:text-zinc-100 hover:text-blue-700 translate-x-1">💻 Backend & Frontend Developer</h2>
             <div>
-                <p className="text-red-200 mt-2">
+                <p className="text-red-200 mt-2 hover:text-white translate-x-0">
                 🎓 Recent Graduate in Software Engineering | University of Lahore.
                 </p>
 
-                <p className="text-red-200 mt-2">
+                <p className="text-red-200 mt-2 hover:text-white translate-x-0">
                 🌍 Passionate about building efficient and scalable web applications.
                 </p>
 
-                <p className="text-red-200 mt-2">
+                <p className="text-red-200 mt-2 hover:text-white translate-x-0">
                 🚀 Currently exploring: Java, Node.js, Angular, React, .NET, and more.
                 </p>
 
-                <p className="text-red-200 mt-2">
+                <p className="text-red-200 mt-2 hover:text-white translate-x-0">
                 💬 Ask me about **ReactJs, JavaScript, ExpressJs, MongoDB, Python, NLP, C++ , Java, OOP and DBS
                 </p>
 
-                <p className="text-red-200 mt-2">
+                <p className="text-red-200 mt-2 hover:text-white translate-x-0">
                 🔍 Open to exciting opportunities in software development
                 </p>
 
-                <p className="text-red-200 mt-2">
+                <p className="text-red-200 mt-2 hover:text-white translate-x-0">
                 📫 How to reach me **bazeed.gul@txend.com
                 </p>
 
-                <p className="text-red-200 mt-2">
+                <p className="text-red-200 mt-2 hover:text-white translate-x-0">
                 ⚡ Fun fact **I am Cricket Lover !!
                 </p>
             </div> 
@@ -58,11 +58,11 @@ const About = () => {
 
             <div className="">
                 <ul>
-                    <li><a className="text-white flex " href=""><FaTwitter className="w-20 h-6 mb-2" /> Follow on X</a></li>
-                    <li><a className="text-white flex" href=""><FaGithub className="w-20 h-6 mb-2" /> Follow on Github</a></li>
-                    <li><a className="text-white flex" href=""><FaInstagram className="w-20 h-6 mb-2" /> Follow on Instagram</a></li>
-                    <li><a className="text-white flex" href=""><FaFacebookSquare className="w-20 h-6 mb-2" />Follow on Facebook</a></li>
-                    <li><a className="text-white flex" href=""><FaLinkedin className="w-20 h-6 mb-2" /> Follow on Linkedin</a></li>
+                    <li><a className="flex text-red-200 mt-2 hover:text-white translate-x-0 " href=""><FaTwitter className="w-20 h-6 mb-2" /> Follow on X</a></li>
+                    <li><a className="flex text-red-200 mt-2 hover:text-white translate-x-0" href=""><FaGithub className="w-20 h-6 mb-2" /> Follow on Github</a></li>
+                    <li><a className="flex text-red-200 mt-2 hover:text-white translate-x-0" href=""><FaInstagram className="w-20 h-6 mb-2" /> Follow on Instagram</a></li>
+                    <li><a className="flex text-red-200 mt-2 hover:text-white translate-x-0" href=""><FaFacebookSquare className="w-20 h-6 mb-2" />Follow on Facebook</a></li>
+                    <li><a className="flex text-red-200 mt-2 hover:text-white translate-x-0" href=""><FaLinkedin className="w-20 h-6 mb-2" /> Follow on Linkedin</a></li>
                 </ul>
             </div>
         </div>
