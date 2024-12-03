@@ -1,6 +1,24 @@
 // import React from 'react'
+// import { Link } from "react-router-dom";
+import  { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Articles = () => {
+
+  const [heading, setHeading] = useState("");
+  const [date, setDate] = useState("");
+  const [description, setDescription] = useState("");
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const newArticle = { heading, date, description };
+    const existingArticles =
+      JSON.parse(localStorage.getItem("articles")) || [];
+    existingArticles.push(newArticle);
+    localStorage.setItem("articles", JSON.stringify(existingArticles));
+    navigate("/articles");
+  };
   return (
     <div className="flex flex-wrap lg:flex-nowrap justify-between px-10 py-12">
       <div className="lg:w-1/2 w-full space-y-6 ml-40">
@@ -8,13 +26,21 @@ const Articles = () => {
           className="text-4xl font-bold tracking-tight
           text-zinc-800 sm:text-5xl dark:text-zinc-100 hover:text-blue-700 translate-x-1"
         >
-          Writing on software design, company building, and the IT industry.
+          Writing Articles on software design, company building, Developer Ideas and the IT industry.
         </h1>
+        <h1 className="text-lg font-bold tracking-tight
+          text-zinc-800 sm:text-5xl dark:text-zinc-100 hover:text-blue-700 translate-x-1">Share your Experiences</h1>
         <div>
           <p className="text-red-200 hover:text-white translate-x-1 mt-10">
             All of my long-form thoughts on programming, leadership, product
             design, and more, collected in chronological order.
           </p>
+
+          {/* <button className="text-white bg-slate-800">
+          <Link to="/articles/addarticles">
+          Click to Write Article
+          </Link>
+          </button> */}
         </div>
 
         <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
@@ -186,6 +212,60 @@ const Articles = () => {
           </div>
         </div>
 
+      </div>
+
+
+
+      <div className="lg:w-1/2 w-full space-y-6 pl-5">
+      <div className="max-w-lg mx-auto mt-12">
+      <h1 className="text-2xl font-bold mb-4">Add a New Article</h1>
+      <form onSubmit={handleSubmit} className="space-y-4">
+      <h1 className="text-lg font-bold tracking-tight
+          text-zinc-800 sm:text-4xl dark:text-zinc-100 hover:text-blue-700 translate-x-1">Add your Article </h1>
+        
+        <div>
+          <label className="block mb-1 text-white">Date</label>
+          <input
+            type="date"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+            className="w-full p-2 border rounded bg-black text-white"
+            required
+          />
+        </div>
+
+        <div>
+          <label className="block mb-1 text-white">Heading</label>
+          <input
+            type="text"
+            value={heading}
+            onChange={(e) => setHeading(e.target.value)}
+            className="w-full p-2 border rounded bg-black text-white"
+            placeholder="Enter a Heading"
+            required
+          />
+        </div>
+        
+        <div>
+          <label className="block mb-1 text-white">Description</label>
+          <textarea
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+            className="w-full p-2 border rounded bg-black text-white"
+            rows="4"
+            required
+            placeholder="Enter a Description"
+          ></textarea>
+        </div>
+        
+        <button
+          type="submit"
+          className="bg-slate-800 text-white px-4 py-2 rounded hover:bg-blue-900 translate-x-1"
+        >
+          Save Article
+        </button>
+      </form>
+    </div>
       </div>
     </div>
   );

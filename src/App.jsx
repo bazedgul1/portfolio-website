@@ -9,6 +9,7 @@ import Articles from "./component/Articles";
 import Projects from "./component/Projects";
 // import Speaking from "./component/Speaking";
 import Uses from "./component/Uses";
+import Breadcrumbs from "./component/BreadCumb";
 // import { Outlet } from "react-router-dom";
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
     <Router>
       {/* Header will be common for all pages */}
       <Header />
-
+      <Breadcrumbs />
       {/* Define Routes */}
       <Routes>
         {/* Default Home Page */}
@@ -33,7 +34,8 @@ function App() {
 
         {/* Other Pages */}
         <Route path="/about" element={<About />} />
-        <Route path="/articles" element={<Articles />} />
+        <Route path="/articles" element={<Articles />} /> 
+       
         <Route path="/projects" element={<Projects />} />
         {/* <Route path="/speaking" element={<Speaking />} /> */}
         <Route path="/uses" element={<Uses />} />

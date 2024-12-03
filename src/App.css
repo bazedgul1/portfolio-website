@@ -17,3 +17,9 @@
     flex-wrap: wrap;
     margin-top: 10px;
 }
+
+
+.Breadcrumb{
+    display: flex;
+    margin-left: 110px;
+}
