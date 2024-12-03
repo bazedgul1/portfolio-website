@@ -1,6 +1,6 @@
 // import React from "react";
 import { Link } from "react-router-dom";
-import DarkModeToggle from "./DarkModeToggle";
+// import DarkModeToggle from "./DarkModeToggle";
 
 const Header = () => {
   return (
@@ -30,9 +30,9 @@ const Header = () => {
         </nav>
         </div>
         {/* Dark Mode Toggle */}
-        <div className="ml-6">
+        {/* <div className="ml-6">
           <DarkModeToggle />
-        </div>
+        </div> */}
       </div>
     </header>
   );

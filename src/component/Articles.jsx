@@ -159,7 +159,7 @@ const Articles = () => {
           {articles.map((article, index) => (
             <div
               key={index}
-              className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40"
+              className="md:border-l"
             >
               <div className="flex max-w-3xl flex-col space-y-4">
                 <time className="text-sm text-zinc-400 dark:text-zinc-500">
