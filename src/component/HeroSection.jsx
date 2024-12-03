@@ -12,12 +12,12 @@ function HeroSection() {
       />
 
       {/* Title */}
-      <h1 className="text-3xl md:text-5xl font-bold mb-4 hover:text-blue-700 translate-x-1">
+      <h1 className="text-3xl md:text-5xl text-white font-bold mb-4 hover:text-blue-700 translate-x-1">
         Software Engineer, MERN , <br /> and JAVA.
       </h1>
 
       {/* Description */}
-      <p className="text-sm md:text-lg max-w-2xl text-gray-400 mb-6 hover:text-red-200 translate-x-1">
+      <p className="text-sm md:text-lg max-w-2xl text-white mb-6 hover:text-red-200 translate-x-1">
         I’m Bazed Gul, a software Engineer and  based in Lahore.
         Recent Graduate in Software Engineering | University of Lahore
         Currently exploring: Java, Node.js, Angular, React, .NET, and more
