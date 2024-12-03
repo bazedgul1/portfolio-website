@@ -37,7 +37,7 @@ const Articles = () => {
       <div className="lg:w-1/2 w-full space-y-6 ml-40">
         <h1
           className="text-4xl font-bold tracking-tight
-          text-zinc-800 sm:text-5xl dark:text-zinc-100 hover:text-blue-700 translate-x-1"
+          text-white sm:text-5xl dark:text-zinc-100 hover:text-blue-700 translate-x-1"
         >
           Writing Articles on software design, company building, Developer Ideas
           and the IT industry.
