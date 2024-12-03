@@ -22,6 +22,8 @@ const NotFound = () => (
   </div>
 );
 
+const data = { message: "Hello Bazed Gul" };
+
 function App() {
   return (
     <Router>
@@ -45,7 +47,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/articles" element={<Articles />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/uses" element={<Uses />} />
+          <Route path="/uses" element={<Uses state={data} />} />
 
           {/* 404 Page */}
           <Route path="*" element={<NotFound />} />
